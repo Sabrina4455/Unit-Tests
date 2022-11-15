@@ -24,7 +24,7 @@ class Test(unittest.TestCase):
     def test_start(self):
         start = datetime.datetime.strptime("2002-01-08", "%Y-%m-%d").date()
         test = datetime.date
-        self.assertIsInstance(start, test, msg="End date is not YYYY-MM-DD.")
+        self.assertIsInstance(start, test, msg="Start date is not YYYY-MM-DD.")
 
     def test_end(self):
         end = datetime.datetime.strptime("2002-01-08", "%Y-%m-%d").date()
