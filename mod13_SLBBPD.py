@@ -8,7 +8,6 @@ class Test(unittest.TestCase):
         stocksymbol = 'GOOGL'
         self.assertLessEqual(len(stocksymbol), 7, msg="Symbol is greater than 7 alphabetical characters.")
         self.assertTrue(stocksymbol.isupper(), msg="Symbol is lowercase.")
-        self.assertTrue(type(stocksymbol) == int, msg="Symbol must be an alphabetical character.")
 
     def test_chart(self):
         charttype = 2
